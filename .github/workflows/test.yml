@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-         gh pr create --head "test" --base "main" --title "testPR" --body ""
+         gh pr create --head "test" --base "main" --title "testPR" --body "" -R ubw81496/test-environment
 
          gh pr merge --auto -m https://github.com/ubw81496/test-environment/pull/3
