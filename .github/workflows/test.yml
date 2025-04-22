@@ -1,0 +1,12 @@
+name: test
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+         gh pr create --head "test" --base "main" --title "testPR" --body ""
+
+         gh pr merge --auto -m https://github.com/ubw81496/test-environment/pull/3
