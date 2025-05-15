@@ -4,4 +4,10 @@ on:
 
 jobs:
   job1:
+    runs-on: ubutnu-latest
+    steps:
+      - name: echo
+        run: echo hi
+  job2:
+    needs: job1
     uses: ./.github/workflows/review-test.yml
