@@ -1,0 +1,7 @@
+name: call review test
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    uses: ./.github/workflows/review-test.yml
